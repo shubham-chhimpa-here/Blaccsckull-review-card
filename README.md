@@ -1,8 +1,34 @@
-# React + Vite
+# How to start to app
+  - Clone the repo
+  - npm install
+  - npm run dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Folder structure of the app
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  - public
+      -vite.svg
+  - src
+      - components
+          - Card.jsx
+          - Rating.jsx
+          - ReviewHighlighter.jsx
+          - Reviews.jsx
+          - Toltip.jsx
+            
+      - data
+          - reviews_data.json
+            
+      - App.css
+      - App.jsx
+      - index.css
+      - main.jsx
+      
+  - .eslintrc.cjs
+  - .gitignore
+  - README.md
+  - index.html
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+  - vite.config.js
