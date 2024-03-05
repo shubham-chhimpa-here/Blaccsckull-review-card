@@ -1,15 +1,10 @@
 import Rating from "./Rating";
 import ReviewHighlighter from "./ReviewHighlighter";
 
-export default function Card({review}) {
-    const {analytics, content} = review;
-    // console.log(review.content.split('.'))
+export default function Card({ review }) {
+    const { analytics, content, rating_review_score } = review;
 
-    const x = analytics.forEach(analytic => {
-analytic.sentences.forEach(sentence => {
-    // console.log(sentence)
-}) 
-    })
+
 
     return <>
 
@@ -23,9 +18,9 @@ analytic.sentences.forEach(sentence => {
                     <div> <span className="font-bold">{review.reviewer_name}</span> wrote a review at <span className="font-bold">{review.source.name}</span></div>
                     <div> bookmark</div>
                 </div>
-                <div className="flex gap-2"> <Rating /> {review.date}</div>
+                <div className="flex gap-2"> <Rating rating = {rating_review_score}/> {review.date}</div>
                 <div>
-                   <ReviewHighlighter data = {review}/>
+                    <ReviewHighlighter data={review} />
                 </div>
             </div>
 
