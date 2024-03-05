@@ -12,7 +12,7 @@
           - Card.jsx
           - Rating.jsx
           - ReviewHighlighter.jsx
-          - Reviews.jsx
+          - ReviewList.jsx
           - Toltip.jsx
             
       - data
